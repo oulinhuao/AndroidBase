@@ -2,24 +2,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.proj.androidbase.MainActivity" >
+    tools:context="com.proj.JJYQFinancial.MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textColor="@color/black"
-        android:text="TextView" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView1"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_marginBottom="98dp"
-        android:text="加一" />
+    <RadioGroup
+	    android:id="@+id/main_menu"
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentBottom="true"
+	    android:paddingTop="2dp"
+	    android:paddingBottom="2dp"
+	    >
+	
+	    <RadioButton
+	        android:id="@+id/main_rdbtn_main"
+	        style="@style/button_tab"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="首页" />
+	
+	    <RadioButton
+	        android:id="@+id/main_rdbtn_product"
+	        style="@style/button_tab"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="金融产品" />
+	    
+	    <RadioButton
+	        android:id="@+id/main_rdbtn_service"
+	        style="@style/button_tab"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="个性服务" />
+	</RadioGroup>
+	
+	<FrameLayout
+        android:id="@+id/content"
+        android:layout_above="@id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
 
 </RelativeLayout>

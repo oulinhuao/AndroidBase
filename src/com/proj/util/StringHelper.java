@@ -11,8 +11,8 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.proj.androidbase.R;
-import com.proj.androidbase.utils.EXDateHelper;
+import com.proj.JJYQFinancial.R;
+import com.proj.JJYQFinancial.utils.EXDateHelper;
 
 import android.content.Context;
 import android.text.TextUtils;

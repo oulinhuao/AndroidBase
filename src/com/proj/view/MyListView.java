@@ -1,7 +1,7 @@
 package com.proj.view;
 
-import com.proj.androidbase.R;
-import com.proj.androidbase.utils.EXDateHelper;
+import com.proj.JJYQFinancial.R;
+import com.proj.JJYQFinancial.utils.EXDateHelper;
 
 import android.content.Context;
 import android.util.AttributeSet;

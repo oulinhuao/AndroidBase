@@ -1,6 +1,6 @@
 package com.proj.base;
 
-import com.proj.androidbase.preferences.PreferencesCommon;
+import com.proj.JJYQFinancial.preferences.PreferencesCommon;
 
 import android.content.Context;
 
@@ -30,7 +30,6 @@ public class GlobalConfig {
 	 * 设定是否登录
 	 * @param is
 	 * @author Tony
-	 * @date 2014年6月30日 上午10:06:16
 	 */
 	public static void setIsLogin(boolean is){
 		if(!is){
@@ -42,7 +41,6 @@ public class GlobalConfig {
 	 * 获得是否登录
 	 * @return
 	 * @author Tony
-	 * @date 2014年6月30日 上午10:06:30
 	 */
 	public static boolean getIsLogin(){
 		return USER_ID > 0;
@@ -52,7 +50,6 @@ public class GlobalConfig {
 	 * 设定用户id
 	 * @param id
 	 * @author Tony
-	 * @date 2014年7月1日 上午11:27:02
 	 */
 	public static void setUserId(int id){
 		USER_ID = id;
@@ -139,33 +136,6 @@ public class GlobalConfig {
 	 */
 	public static String getTokenIdPsd() {
 		return TOKEN_ID + COM_NAME;
-	}
-	
-	/**
-	 * GridView最多选取图片个数
-	 */
-	public static final int MAX_SELECTED_PICTURE_NUM = 2;
-	/**
-	 * 删除相册图片广播
-	 */
-	public static final String BROADCAST_FILTER_FOR_DELETE_GALLERY_PICTURE = "com.kingdon.zmfy.deletepicture.gallery";
-	/**
-	 * 删除分享界面图片广播
-	 */
-	public static final String BROADCAST_FILTER_FOR_DELETE_SHARE_PICTURE = "com.kingdon.zmfy.deletepicture.share";
-	/**
-	 * 图片取样值
-	 */
-	public static final int PICTURE_SIMPLE_SIZE = 500;
-	
-	/** 实名验证 */
-	public static int getCodeBackFromVerified() {
-		return 2029;
-	}
-
-	/** 佛友交流发表 */
-	public static int getCodeBackFromCommEdit() {
-		return 2030;
 	}
 	
 }

@@ -4,8 +4,8 @@ import java.io.File;
 import java.net.URLEncoder;
 import java.util.Locale;
 
-import com.proj.androidbase.R;
-import com.proj.androidbase.utils.MIMEType;
+import com.proj.JJYQFinancial.R;
+import com.proj.JJYQFinancial.utils.MIMEType;
 import com.proj.androidlib.tool.LogHelper;
 import com.proj.androidlib.tool.SdCardAndFileHelper;
 
